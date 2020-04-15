@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href={{ url_for('static', filename='css/style.css') }} rel="stylesheet" media="screen">
+      <link href={{ url_for('static', filename='css/scroller.css') }} rel="stylesheet" media="screen">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Scroller Demo</title>
+   </head>
+   <body>
+      <div class="topnav">
+         <a class="active" href="#home">Home</a>
+         <a href="/logout">Log Out</a>
+      </div>
+      <div class="header">
+         <a href="#default" class="logo">Your Logo</a>
+         <div class="header-right">
+            <span class='intro__hed'>Data Story Title</span>
+         </div>
+      </div>
+      <div class="highlight">
+      </div>
+      <section id='intro'>
+         <p class='intro__dek'>
+            Scroll to see your latest story
+         </p>
+      </section>
+      <section id='scroll'>
+         <div class='scroll__graphic'>
+            <div class='chart'>
+            </div>
+         </div>
+         <div class='scroll__text'>
+            <div class='step step1' data-step='1'>
+               <p></p>
+            </div>
+            <div class='step step2' data-step='2'>
+               <p></p>
+            </div>
+         </div>
+      </section>
+      <script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
+      <script src={{ url_for('static', filename='./bower_components/bootstrap/dist/js/bootstrap.min.js') }}></script>
+      <script src={{ url_for('static', filename='./bower_components/d3/d3v4.min.js') }}></script>
+      <script src={{ url_for('static', filename='./bower_components/d3/d3-interpolate-path.min.js') }}></script>
+      <script src={{ url_for('static', filename='./bower_components/Scrollama/scrollama.min.js') }}></script>
+      <script src={{ url_for('static', filename='./bower_components/Scrollama/script.js') }}></script>
+      <script src={{ url_for('static', filename='charts/verticalBar.js') }}></script>
+      <script src={{ url_for('static', filename='charts/line.js') }}></script>
+      <script src={{ url_for('static', filename='js/data-prep.js') }}></script>
+      <script src={{ url_for('static', filename='js/story.js') }}></script>
+   </body>
+   <script></script>
+</html>
