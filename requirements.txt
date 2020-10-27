@@ -116,7 +116,7 @@ conda-build==3.0.22
 conda-verify==2.0.0
 contextlib2==0.5.5
 convertdate==2.2.0
-cryptography==2.7
+cryptography==3.2
 cycler==0.10.0
 Cython==0.26.1
 cytoolz==0.8.2
